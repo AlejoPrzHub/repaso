@@ -39,14 +39,14 @@ function isRainbow(colors:string[])
 }
 // isRainbow(["red","white","yellow"])
 
-function add(myWords:string[])
+export function add(myWords:string[]):number
 {
+    let resultado:number
+        resultado = 0;
     for (let i=0 ; i<myWords.length ; i++)
     {
-        let numeroCaracteres:number
-        let n:number;
-        numeroCaracteres = myWords[i].length;
-        n = numeroCaracteres 
-        console.log(n);
-    }}
-add(["hola","como","estas?"])
+        resultado +=  myWords[i].length
+    }
+    return resultado
+}
+//add(["hola","como","estas?"])

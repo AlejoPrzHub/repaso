@@ -37,7 +37,7 @@ function continent(country:string)
 //continent("venezuela");
 
 
-function isEven(number:number)
+export function isEven(number:number)
 {
     if (number % 2 == 0) {console.log("El numero es par")}
     else (console.log("El numero es impar"));
