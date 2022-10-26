@@ -2,8 +2,14 @@
 exports.__esModule = true;
 var point_1 = require("./point");
 var myPoint = new point_1.Point(20, 20);
+var mePoint = new point_1.Point(80, 35);
+var truePoint = new point_1.Point(-1, 30);
 console.log(myPoint.getX());
 console.log(myPoint.getY());
 myPoint.setX(10);
 myPoint.setY(30);
 console.log(myPoint.toString());
+console.log(myPoint.distanceToOrigin());
+console.log(myPoint.calculateDistance(mePoint));
+console.log(myPoint.calcularQuadrant());
+console.log(myPoint.calcularNearest([mePoint, truePoint]));
