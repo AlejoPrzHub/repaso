@@ -29,8 +29,8 @@ export class mobileCollection
         return resultado
     }
     
-    setMobiles(newMobiles:Mobile[]){this.mobiles = newMobiles};
-    setTotalPrice(newTotalPrice:number){this.totalPrice = newTotalPrice};
+    setMobiles(newMobiles:Mobile[]):void{this.mobiles = newMobiles};
+    setTotalPrice(newTotalPrice:number):void{this.totalPrice = newTotalPrice};
 
     private totalPriceCalculation()
     {
